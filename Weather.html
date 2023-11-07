@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./Weather.css" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Griffy&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="navbar">
+    <input type="checkbox" id="check" name="" value="">
+    <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+    <label class="logo">Weather Application</label>
+    <ul>
+       <input type="text" placeholder=" City/States" id="enter"><i class="fa-solid fa-location-pin" id="location"></i>
+       <label>
+         <button onclick="Operation()" id="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
+       </label>
+       <!-- <li><a href="#">about</a></li> -->
+    </ul>
+
+</nav>
+   
+<div class="logos">
+   <div class="logos-slide">
+    <img src="./images/1.webp">
+    <img src="./images/2.png">
+    <img src="./images/3.png">
+    <img src="./images/4.png">
+    <img src="./images/sun.webp">
+    <img src="./images/mostly sunny.webp">
+   </div>   
+   <div class="logos-slide">
+      <img src="./images/1.webp">
+      <img src="./images/2.png">
+      <img src="./images/3.png">
+      <img src="./images/4.png">
+      <img src="./images/sun.webp">
+      <img src="./images/mostly sunny.webp">
+        </div>      
+   </div>
+
+
+    <div class="left_outer">
+        <p id="time"></p>
+        <p id="greeting">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Good Morning ,Infotrixs</p>
+     <form id="form1">
+        <img src="./images/thunder.png" width="100%" height="45%">
+        <h1 id="day">Mon</h1>
+        <h5 id="tem">28&deg;C</h5>    
+
+     </form> 
+     <form id="form2">
+        <img src="./images/rain_trsp.webp" width="100%" height="50%">
+        <h1 id="day1">Tue</h1>
+        <h5 id="tem1">17&deg;C.</h5>    
+
+     </form> 
+     <form id="form3">
+        <img src="./images/sunrain.png" width="100%" height="50%">
+        <h1 id="day2">Wed</h1>
+        <h5 id="tem2">20&deg;C.</h5>    
+
+     </form> 
+     <form id="form4">
+        <img src="./images/thunderrain.jpg" width="80%" height="50%">
+        <h1 id="day3">Thu</h1>
+        <h5 id="tem3">29&deg;C.</h5>    
+
+     </form> 
+     <form id="form5">
+        <img src="./images/night.png" width="80%" height="50%">
+        <h1 id="day4">Fri</h1>
+        <h5 id="tem4">22&deg;C.</h5>    
+
+     </form> 
+     <form id="form6">
+        <img src="./images/6757213.webp" width="80%" height="50%">
+        <h1 id="day5">Sat</h1>
+        <h5 id="tem5">16&deg;C.</h5>    
+
+     </form>    
+     <form id="form7">
+        <img src="./images/half sun.webp" width="80%" height="50%">
+        <h1 id="day6">Sun</h1>
+        <h5 id="tem6">16&deg;C.</h5> 
+     </form> 
+
+    
+    </div>
+
+    
+    
+    <div class="Outer">
+         <div class="Inner">
+         <nav>
+                
+                
+                <img id="img1" src="./images/half sun.webp">
+                <h1 id="static_date">Today,08-2023</h1>
+                <h3  id="city1">Location</h3>
+                <h3  id="temp1"></h3>
+                <p  id="type1"></p>
+         </nav>  
+
+         <form>
+             <i class="fa-solid fa-wind" style="color: #ffffff;" id="wind"></i><span><h1 id="w" color="yellow">Wind</h1></span>
+             <h1 id="wind1"></h1>
+             
+             <img src="./images/humi.webp" width="20px" height="20px" id="humi"><h1 id="h">Humidity</h1>
+             <h1 id="humi1"></h1>
+
+        </form>
+    
+    </div>
+    </div>
+
+    <form id="second_form">
+      <p id="city2">2 Top Cities<h1 id="city1">India</h1></p> 
+      <p id="c1">City 2</p>
+      <p id="c2">City 1</p>
+      <h1 id="din"></h1>
+      <p id="raat"></p>
+
+    </form>
+
+    <form id="Third_form">
+      <h1 id="round"></h1>
+      <p id="Nov">November</p>
+      Sunny Days<h1 id=""></h1>
+    </form>
+    <script src="./weather.js"></script> 
+</body>
+</html>
